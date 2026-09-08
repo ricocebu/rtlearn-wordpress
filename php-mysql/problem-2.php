@@ -6,7 +6,7 @@ $data = array(
     ),
 );
 
-if ( ! empty( $data['user']['email'] ) ) {
+if ( array_key_exists('email', $data['user']) ) {
     echo 'Email key is provided.' . "\n";
 } else {
     echo 'Email key is missing.' . "\n";
