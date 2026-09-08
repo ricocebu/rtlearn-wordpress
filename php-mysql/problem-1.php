@@ -7,7 +7,7 @@
  * @return void
  */
 function writeLog( $message ) {
-    $file = fopen( 'log.txt', 'r');
+    $file = fopen( 'log.txt', 'a');
 
     fwrite( $file, $message . PHP_EOL );
     fclose($file);
