@@ -6,22 +6,38 @@
    <title>Sample Page </title>
    <style>
       .container{ 
-         display:flex
+         display:flex;
+         flex-wrap: wrap;
       }
 
       .column{
          flex: 1;
          padding: 10px;
          background-color: #d3d3d3;
-         margin: 5px
+         margin: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
       }
    </style>
 </head>
 <body>
    <div class="container">
-      <div class="column">Column 1</div>
-      <div class="column">Column 2</div>
-      <div class="column">Column 3</div>
+      <div class="column">
+        <h3>Web Development</h3>
+        <p>Building modern websites using HTML, CSS, and JavaScript with responsive design principles.</p>
+      </div>
+      <div class="column">
+        <h3>Backend Development</h3>
+        <p>Creating server-side applications using PHP and MySQL with secure database operations.</p>
+      </div>
+      <div class="column">
+        <h3>WordPress Development</h3>
+        <p>Building custom themes and plugins for WordPress following rtCamp coding standards.</p>
+      </div>
    </div>
 </body>
 </html>
