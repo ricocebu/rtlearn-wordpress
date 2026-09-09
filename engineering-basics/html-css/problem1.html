@@ -1,0 +1,27 @@
+<!-- Create a responsive layout where there are three columns on large screens, but on smaller screens, the columns stack vertically. Each column must have equal width and contain dynamic content. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sample Page </title>
+   <style>
+      .container{ 
+         display:flex
+      }
+
+      .column{
+         flex: 1;
+         padding: 10px;
+         background-color: #d3d3d3;
+         margin: 5px
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+      <div class="column">Column 3</div>
+   </div>
+</body>
+</html>
