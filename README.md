@@ -28,7 +28,7 @@ rtCamp is a leading WordPress agency. Their rtLearn course covers the full stack
 ## Structure
 
 ```text
-rt-learn/
+rt-learn-wordpress/
 ├── engineering-basics/
 │   ├── php-mysql/
 │   ├── html-css/
