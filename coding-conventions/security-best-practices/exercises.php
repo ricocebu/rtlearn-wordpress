@@ -1,7 +1,3 @@
-<!-- Exercises
-Go through the lessons on security vulnerabilities on hacksplaining.com.
-Identify security vulnerabilities in the following code and fix them. -->
-
 <?php
 /**
  * 
