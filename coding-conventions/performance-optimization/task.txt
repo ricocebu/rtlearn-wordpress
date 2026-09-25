@@ -1,0 +1,14 @@
+1. Limit the number of posts fetched by the query:
+   - Change 'posts_per_page' from -1 to a reasonable limit (e.g., 10).
+
+2. Disable unnecessary pagination calculations:
+   - Add 'no_found_rows' => true in the query arguments.
+
+3. Fetch only the required data:
+   - Use 'fields' => 'ids' to fetch only the post IDs, avoiding extra data.
+
+4. Disable metadata caching if post meta is not needed:
+   - Add 'update_post_meta_cache' => false to the query arguments.
+
+5. Disable taxonomy term caching if taxonomy terms are not required:
+   - Add 'update_post_term_cache' => false to the query arguments.
